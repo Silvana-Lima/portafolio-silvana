@@ -1,0 +1,363 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+/* HEADER */
+
+
+header{
+    background-color:rgb(81, 50, 82);
+    height: 90px;
+
+}
+
+header nav ul{
+    height: 90px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    margin-right: 50px;
+   
+   
+}
+
+header nav ul li a{
+    text-decoration: none;
+    margin: 10px;
+    color: white;
+}
+
+header nav ul li .contacto{
+    background-color:rgb(122, 64, 105);
+    padding: 10px 20px;
+    border-radius: 50px;
+}
+
+
+/* MAIN */
+
+
+/* Sección de presentación */
+
+
+.cont-presentacion{
+    height: 100vh;
+    background-color:lightpink ;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    
+}
+
+section .saludo{
+   
+    width: 400px;
+    margin-right: 100px;
+   
+}
+
+.saludo h3, h1, button, p{
+    padding: 10px 0;
+   
+}
+
+h1{
+    font-size: 55px;
+    color: rgb(202, 78, 121);
+}
+
+.saludo h3{
+    font-size: 30px;
+    color: gray;
+}
+
+button, .enviar{
+    background-color: rgb(122, 64, 105);
+   border-radius: 50px;
+   padding: 15px 20px;
+   margin-top: 20px;
+   border-style: none;
+   color: white;
+}
+
+
+
+
+.perfil{
+    width: 300px;
+    height: 300px;
+    border: 1px solid rgb(122, 64, 105);
+    border-radius: 50%;
+}
+
+.mifoto{
+ width: 100%;
+ object-fit: cover;
+   
+}
+
+button a{
+    text-decoration: none;
+    color:white;
+    font-weight: bold;
+}
+
+/* Sección de mis conocimientos */
+
+.cont-conocimientos{
+height: 100vh;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+text-align: center;
+margin: 100px;
+
+}
+
+h2{
+    font-size: 40px;
+}
+
+.parrafo-intro{
+    width: 350px;
+    text-align: center;
+    margin: 20px; 
+    
+}
+.iconos-skills{
+width: 700px;
+display: flex;
+flex-wrap: wrap;
+}
+
+.skill{
+    
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    font-size: 100px; 
+    
+    
+
+}
+
+.skill p{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+ .fa-html5{
+color: rgb(255, 72, 0);
+ }
+ .fa-css3{
+    color: rgb(0, 170, 255);
+ }
+ .fa-sass {
+    color: pink;
+ }
+ .fa-js{
+    color: yellow;
+ }  
+ .fa-react{
+    color: aqua;
+ } 
+ .fa-git-alt{
+    color: rgb(255, 72, 0);
+ }
+    
+
+/* Sección de Cita*/
+
+
+.cont-cita{
+    text-align: center;
+    background-color:rgb(202, 78, 121);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 20px;
+    color: white;
+}
+
+.cont-cita i{
+    font-size: 100px;
+}
+
+.cont-cita blockquote{
+ width: 500px;
+}
+.cont-cita h3{
+    margin-top: 80px;
+}
+
+
+/* Sección Mis Proyectos  */
+
+.projects{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 100px;
+}
+
+
+.container-projects{
+  
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+   
+}
+
+
+.box-project{
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    margin: 15px;
+    padding: 15px;
+    width: 300px;
+    text-align: center;
+    display: flex;
+    flex-direction: column-reverse;
+    
+}
+
+
+
+.box-project img{
+  width: 100%;
+}
+
+.box-project a{
+    text-decoration: none;
+    color: black;
+}
+/* Sección Contacto */
+
+
+.container-contac{
+    display: flex;
+    background-color: pink;
+    justify-content: center;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    width: 1000px;  /*chequear*/
+    margin: 100px auto; 
+    padding: 90px 50px; 
+
+}
+.contactame{
+width: 400px;
+ margin-right: 100px;
+}
+
+.contactame p{
+    margin: 15px 0;
+    font-size: 18px;
+}
+
+.link-contacto{
+    display: block;
+    margin: 15px 0;
+    font-size: 20px;
+   
+    
+   
+}
+
+.link-contacto a{
+    text-decoration: none;
+    color: black;
+    
+}
+
+.cont-nombre{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    margin-right: 20px;
+}
+
+.cont-apellido{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+
+}
+
+.nombreYapellido{
+    display: flex;
+}
+
+.cont-emailymensaje{
+    display: flex;
+    flex-direction: column;
+}
+ label{
+   margin: 15px 0;
+}
+input, textarea{
+    border-radius: 30px;
+    padding: 10px 25px;
+    border-style: none;
+
+   
+} 
+
+/* FOOTER */
+
+footer{
+    background-color:rgb(81, 50, 82);
+    padding: 100px;
+}
+
+footer nav ul, footer ul, .copy{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.cont-contacto li a{
+    margin:15px 10px; 
+    text-decoration: none; 
+    color: white;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    background-color:rgb(202, 78, 121);   
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+
+}
+footer nav ul li a{
+    
+ text-decoration: none;
+    margin: 10px;
+    color: white; 
+}
+
+li{
+    list-style: none;
+}
+
