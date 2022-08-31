@@ -25,8 +25,8 @@ header nav ul{
     align-items: center;
     list-style: none;
     margin-right: 50px;
-   
-   
+
+
 }
 
 header nav ul li a{
@@ -49,24 +49,24 @@ header nav ul li .contacto{
 
 
 .cont-presentacion{
-    height: 100vh;
+    min-height: 100vh;
     background-color:lightpink ;
     display: flex;
     justify-content:center;
     align-items: center;
-    
+
 }
 
-section .saludo{
-   
+.saludo{
+
     width: 400px;
     margin-right: 100px;
-   
+
 }
 
 .saludo h3, h1, button, p{
     padding: 10px 0;
-   
+
 }
 
 h1{
@@ -94,14 +94,13 @@ button, .enviar{
 .perfil{
     width: 300px;
     height: 300px;
-    border: 1px solid rgb(122, 64, 105);
-    border-radius: 50%;
+   
 }
 
 .mifoto{
  width: 100%;
- object-fit: cover;
-   
+
+
 }
 
 button a{
@@ -112,14 +111,19 @@ button a{
 
 /* Sección de mis conocimientos */
 
+.misConocimientos{
+    min-height: 100vh;
+    padding: 100px;
+}
+
 .cont-conocimientos{
-height: 100vh;
+
 display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: center;
 text-align: center;
-margin: 100px;
+padding: 20px;
 
 }
 
@@ -130,17 +134,19 @@ h2{
 .parrafo-intro{
     width: 350px;
     text-align: center;
-    margin: 20px; 
-    
+    margin: 20px;
+
 }
 .iconos-skills{
-width: 700px;
+width: 70%;
 display: flex;
 flex-wrap: wrap;
+justify-content: center;
+
 }
 
 .skill{
-    
+
     border: 1px solid lightgray;
     border-radius: 5px;
     width: 200px;
@@ -150,9 +156,9 @@ flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     margin: 10px;
-    font-size: 100px; 
-    
-    
+    font-size: 100px;
+
+
 
 }
 
@@ -172,14 +178,14 @@ color: rgb(255, 72, 0);
  }
  .fa-js{
     color: yellow;
- }  
+ }
  .fa-react{
     color: aqua;
- } 
+ }
  .fa-git-alt{
     color: rgb(255, 72, 0);
  }
-    
+
 
 /* Sección de Cita*/
 
@@ -215,16 +221,17 @@ color: rgb(255, 72, 0);
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 100px;
+    padding: 100px;
+   
 }
 
 
 .container-projects{
-  
+   
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-   
+
 }
 
 
@@ -237,7 +244,7 @@ color: rgb(255, 72, 0);
     text-align: center;
     display: flex;
     flex-direction: column-reverse;
-    
+
 }
 
 
@@ -252,6 +259,11 @@ color: rgb(255, 72, 0);
 }
 /* Sección Contacto */
 
+.section-contac{
+    min-height: 100vh;
+    padding: 5%;
+    
+}
 
 .container-contac{
     display: flex;
@@ -259,14 +271,15 @@ color: rgb(255, 72, 0);
     justify-content: center;
     border: 1px solid lightgray;
     border-radius: 10px;
-    width: 1000px;  /*chequear*/
-    margin: 100px auto; 
-    padding: 90px 50px; 
+    /* width: 80%;  */
+    margin: 50px auto;
+    padding: 90px 50px;
+    
 
 }
 .contactame{
-width: 400px;
- margin-right: 100px;
+width: 40%;
+margin-right: 100px;
 }
 
 .contactame p{
@@ -278,28 +291,36 @@ width: 400px;
     display: block;
     margin: 15px 0;
     font-size: 20px;
-   
-    
-   
+
+
+
 }
 
 .link-contacto a{
     text-decoration: none;
     color: black;
-    
+
+}
+
+.escribime{
+    width: 60%;
+}
+
+.escribime h2{
+    margin-bottom: 15px;
 }
 
 .cont-nombre{
     display: flex;
     flex-direction: column;
-    width: 200px;
+    width: 50%;
     margin-right: 20px;
 }
 
 .cont-apellido{
     display: flex;
     flex-direction: column;
-    width: 200px;
+    width: 50%;
 
 }
 
@@ -319,8 +340,8 @@ input, textarea{
     padding: 10px 25px;
     border-style: none;
 
-   
-} 
+
+}
 
 /* FOOTER */
 
@@ -332,32 +353,94 @@ footer{
 footer nav ul, footer ul, .copy{
     display: flex;
     justify-content: center;
-    
+
 }
 
 .cont-contacto li a{
-    margin:15px 10px; 
-    text-decoration: none; 
+    margin:15px 10px;
+    text-decoration: none;
     color: white;
     width: 50px;
     height: 50px;
     padding: 10px;
-    background-color:rgb(202, 78, 121);   
+    background-color:rgb(202, 78, 121);
     border-radius: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
-   
+
 
 }
 footer nav ul li a{
-    
+
  text-decoration: none;
     margin: 10px;
-    color: white; 
+    color: white;
 }
 
 li{
     list-style: none;
 }
 
+/* Diseño Responsive*/
+
+/*Tablets*/
+
+@media (max-width:960px){
+
+    header, nav{
+        display: none;
+    }
+
+    .cont-presentacion{
+        flex-direction: column;
+        
+    }
+
+    .saludo{
+        text-align: center;
+        margin: 20px auto;
+    }
+
+    .container-contac{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contactame, .escribime{
+        text-align: center;
+        margin: 20px auto;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .nombreYapellido{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .cont-nombre, .cont-apellido{
+        width: 100%;
+        margin: 0;
+    }
+
+    }
+
+/*Mobile*/
+
+@media (max-width:480px){
+ 
+    blockquote{
+        padding: 50px;
+    }
+    .section-contac{
+        /* padding: 30px; */
+    }
+    .container-contac{
+        /* padding: 50px; */
+    } 
+   
+}
