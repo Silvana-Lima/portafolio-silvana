@@ -5,7 +5,6 @@
 }
 
 body{
-    /* font-family: Tahoma, Geneva, Verdana, sans-serif; */
     font-family: 'Roboto Condensed', sans-serif;
 }
 
@@ -15,14 +14,13 @@ body{
 
 header{
     background-color:rgb(81, 50, 82);
-    height: 90px;
     position: sticky;
     top: 0;
+    padding: 30px;
 
 }
 
 header nav ul{
-    height: 90px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -230,6 +228,7 @@ color: rgb(255, 72, 0);
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 100px 0;
    
    
 }
