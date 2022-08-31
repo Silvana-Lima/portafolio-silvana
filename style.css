@@ -59,7 +59,7 @@ header nav ul li .contacto{
 
 .saludo{
 
-    width: 400px;
+    width: 400px; 
     margin-right: 100px;
 
 }
@@ -113,11 +113,11 @@ button a{
 
 .misConocimientos{
     min-height: 100vh;
-    padding: 100px;
+    padding: 100px 0;
 }
 
-.cont-conocimientos{
 
+.cont-conocimientos{
 display: flex;
 flex-direction: column;
 align-items: center;
@@ -125,20 +125,24 @@ justify-content: center;
 text-align: center;
 padding: 20px;
 
+
 }
 
 h2{
     font-size: 40px;
+    margin: 50px 0 20px 0;
 }
 
 .parrafo-intro{
-    width: 350px;
+    
     text-align: center;
-    margin: 20px;
+    margin-bottom: 20px;
+    
 
 }
 .iconos-skills{
-width: 70%;
+
+width: 70%; 
 display: flex;
 flex-wrap: wrap;
 justify-content: center;
@@ -200,17 +204,15 @@ color: rgb(255, 72, 0);
     height: 100vh;
     font-size: 20px;
     color: white;
+    
 }
 
 .cont-cita i{
     font-size: 100px;
 }
 
-.cont-cita blockquote{
- width: 500px;
-}
-.cont-cita h3{
-    margin-top: 80px;
+.cont-cita *{
+    margin-bottom: 50px;
 }
 
 
@@ -398,6 +400,7 @@ li{
     }
 
     .saludo{
+        width: 100wh;
         text-align: center;
         margin: 20px auto;
     }
@@ -406,6 +409,7 @@ li{
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding: 30px 20px;
     }
 
     .contactame, .escribime{
@@ -432,15 +436,25 @@ li{
 /*Mobile*/
 
 @media (max-width:480px){
+
+
+    .misConocimientos{
+        padding: 0;
+    }
  
     blockquote{
         padding: 50px;
     }
+
     .section-contac{
-        /* padding: 30px; */
+         padding: 0px;
+         
+       
     }
     .container-contac{
-        /* padding: 50px; */
+        padding: 20px 10px;
+        width: 100wh;
+        margin: 0; 
     } 
-   
+
 }
