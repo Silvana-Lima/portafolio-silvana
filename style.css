@@ -5,7 +5,8 @@
 }
 
 body{
-    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    /* font-family: Tahoma, Geneva, Verdana, sans-serif; */
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
 
@@ -15,6 +16,8 @@ body{
 header{
     background-color:rgb(81, 50, 82);
     height: 90px;
+    position: sticky;
+    top: 0;
 
 }
 
@@ -57,7 +60,7 @@ header nav ul li .contacto{
 
 .cont-presentacion{
     min-height: 100vh;
-    background-color:lightpink ;
+    background: rgb(249, 218, 194);
     display: flex;
     justify-content:center;
     align-items: center;
@@ -75,13 +78,13 @@ header nav ul li .contacto{
 
 }
 
-h1{
+h1{ 
     font-size: 55px;
-    color: rgb(202, 78, 121);
+    color: rgb(122, 64, 105);
 }
 
 .saludo h3{
-    font-size: 30px;
+    font-size: 25px;
     color: gray;
 }
 
@@ -100,8 +103,8 @@ button:hover, .enviar:hover{
 
 
 .mifoto{
-    width: 300px;
-    height: 300px;
+    width: 270px;
+    height: 270px;
     border-radius: 50%;
     border: 2px solid rgb(122, 64, 105);
     box-shadow: 8px 10px 14px 0px rgba(0,0,0,0.45);
@@ -112,7 +115,6 @@ button:hover, .enviar:hover{
 button a{
     text-decoration: none;
     color:white;
-    font-weight: bold;
 }
 
 /* Sección de mis conocimientos */
@@ -135,7 +137,7 @@ padding: 20px;
 }
 
 h2{
-    font-size: 40px;
+    font-size: 35px;
     margin: 50px 0 20px 0;
 }
 
@@ -201,7 +203,7 @@ color: rgb(255, 72, 0);
 
 .cont-cita{
     text-align: center;
-    background-color:rgb(202, 78, 121);
+    background-color:rgb(172, 112, 136);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -274,7 +276,7 @@ color: rgb(255, 72, 0);
 
 .container-contac{
     display: flex;
-    background-color: pink;
+    background-color:rgb(249, 218, 194);
     justify-content: center;
     border: 1px solid lightgray;
     border-radius: 10px;
@@ -289,7 +291,7 @@ margin-right: 100px;
 }
 
 .contactame i{
-    color: rgb(202, 78, 121);
+    color:rgb(172, 112, 136);
     font-size: 20px;
    
 }
@@ -315,7 +317,7 @@ margin-right: 100px;
 }
 
 .link-contacto a:hover{
-    color:  rgb(202, 78, 121);
+    color:  rgb(172, 112, 136);
 }
 
 .escribime{
@@ -369,7 +371,7 @@ footer{
 footer nav ul, footer ul, .copy{
     display: flex;
     justify-content: center;
-    color: pink;
+    color:rgb(249, 218, 194);
 
 }
 
@@ -380,7 +382,7 @@ footer nav ul, footer ul, .copy{
     width: 50px;
     height: 50px;
     padding: 10px;
-    background-color:rgb(202, 78, 121);
+    background-color:rgb(172, 112, 136);
     border-radius: 50px;
     display: flex;
     justify-content: center;
@@ -400,7 +402,7 @@ li{
 }
 
 .cont-contacto a:hover{
-    background-color: rgb(242, 15, 102);
+    background-color:rgb(249, 218, 194);
 }
 
 /* Diseño Responsive*/
@@ -410,8 +412,9 @@ li{
 @media (max-width:960px){
 
     header, nav{
-        display: none;
+      display: none;
     }
+
 
     .cont-presentacion{
         flex-direction: column;
@@ -466,12 +469,16 @@ li{
     }
 
     .mifoto{
-        width: 60%;
-        height: 60%; 
+        width: 200px;
+        height: 200px; 
     }
 
     h1{
-        font-size: 40px;
+        font-size: 55px;
+    }
+
+    h3{
+        font-size: 20px;
     }
 
     .misConocimientos{
