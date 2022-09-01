@@ -268,7 +268,7 @@ color: rgb(255, 72, 0);
 
 .section-contac{
     min-height: 100vh;
-    padding: 5%;
+    padding: 100px;
     
 }
 
@@ -523,10 +523,6 @@ li{
         font-size: 20px;
     }
 
-    .mis-conocimientos{
-        padding: 0;
-    }
-
     h2{
         font-size: 20px;
         text-align: center;
@@ -543,9 +539,8 @@ li{
 
 
     .section-contac{
-         padding: 0px;
+         padding:100px 0 0 0;
          
-       
     }
     .container-contac{
         padding: 20px 10px;
