@@ -9,51 +9,49 @@ body{
 }
 
 
-/* HEADER */
+/*####---- HEADER ----####*/
 
 
 header{
     background-color:rgb(81, 50, 82);
     position: sticky;
     top: 0;
-    padding: 30px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 
 }
 
-header nav ul{
+.nav-header ul{
     display: flex;
-    justify-content: flex-end;
     align-items: center;
     list-style: none;
     margin-right: 50px;
-
-
 }
 
-header nav ul li a{
+.nav-header ul li a{
     text-decoration: none;
     margin: 10px;
     color: white;
 }
 
-header nav a:hover, footer a:hover{
+.nav-header a:hover, .nav-footer a:hover{
     font-size: 18px;
+    color: rgb(172, 112, 136);
+}
+
+.contacto{
     background-color:rgb(122, 64, 105);
     padding: 10px 20px;
     border-radius: 50px;
 }
 
-header nav ul li .contacto{
-    background-color:rgb(122, 64, 105);
-    padding: 10px 20px;
-    border-radius: 50px;
-}
+
+/*####---- MAIN ----####*/
 
 
-/* MAIN */
-
-
-/* Sección de presentación */
+/*####---- SECCIÓN DE PRESENTACIÓN ----####*/
 
 
 .cont-presentacion{
@@ -65,15 +63,12 @@ header nav ul li .contacto{
 
 }
 
-.saludo{
-
+.intro{
     margin-right: 100px;
-
 }
 
-.saludo h3, h1, button, p{
-    padding: 10px 0;
-
+.intro *{
+    margin-bottom: 20px;
 }
 
 h1{ 
@@ -81,7 +76,7 @@ h1{
     color: rgb(122, 64, 105);
 }
 
-.saludo h3{
+h3{
     font-size: 25px;
     color: gray;
 }
@@ -100,12 +95,12 @@ button:hover, .enviar:hover{
 }
 
 
-.mifoto{
+.foto-perfil{
     width: 270px;
     height: 270px;
     border-radius: 50%;
     border: 2px solid rgb(122, 64, 105);
-    box-shadow: 8px 10px 14px 0px rgba(0,0,0,0.45);
+    box-shadow: 8px 10px 14px 0px rgba(122,64,105,0.45);
 
 
 }
@@ -115,9 +110,9 @@ button a{
     color:white;
 }
 
-/* Sección de mis conocimientos */
+/*####---- SECCIÓN CONOCIMIENTOS ----####*/
 
-.misConocimientos{
+.mis-conocimientos{
     min-height: 100vh;
     padding: 100px 0;
 }
@@ -136,17 +131,15 @@ padding: 20px;
 
 h2{
     font-size: 35px;
-    margin: 50px 0 20px 0;
 }
 
-.parrafo-intro{
+.p-intro-conocimientos, h2 ,.p-intro-projects{
     text-align: center;
     margin-bottom: 20px;
     
-
 }
-.iconos-skills{
 
+.cont-skills{
 width: 70%; 
 display: flex;
 flex-wrap: wrap;
@@ -154,7 +147,7 @@ justify-content: center;
 
 }
 
-.skill{
+.box-skill{
 
     border: 1px solid  rgb(122, 64, 105);
     border-radius: 5px;
@@ -166,14 +159,15 @@ justify-content: center;
     align-items: center;
     margin: 10px;
     font-size: 100px;
-
-
-
 }
 
-.skill p{
+.box-skill p{
     font-size: 20px;
     font-weight: bold;
+}
+
+.box-skill:hover{
+    background-color: rgb(248, 230, 217);
 }
 
  .fa-html5{
@@ -196,7 +190,7 @@ color: rgb(255, 72, 0);
  }
 
 
-/* Sección de Cita*/
+/*####---- SECCIÓN CITA ----####*/
 
 
 .cont-cita{
@@ -213,7 +207,7 @@ color: rgb(255, 72, 0);
 }
 
 .cont-cita i{
-    font-size: 100px;
+    font-size: 80px;
 }
 
 .cont-cita *{
@@ -221,7 +215,7 @@ color: rgb(255, 72, 0);
 }
 
 
-/* Sección Mis Proyectos  */
+/*####---- SECCIÓN PROYECTOS  ----####*/
 
 .projects{
     display: flex;
@@ -255,8 +249,6 @@ color: rgb(255, 72, 0);
 
 }
 
-
-
 .box-project img{
   width: 100%;
 }
@@ -265,7 +257,14 @@ color: rgb(255, 72, 0);
     text-decoration: none;
     color: black;
 }
-/* Sección Contacto */
+
+.box-project:hover{
+    box-shadow: 8px 10px 14px 0px rgba(122,64,105,0.45);
+
+}
+
+
+/*####---- SECCIÓN CONTACTO ----#####*/
 
 .section-contac{
     min-height: 100vh;
@@ -284,29 +283,29 @@ color: rgb(255, 72, 0);
     
 
 }
-.contactame{
+.contact-me{
 width: 40%;
 margin-right: 100px;
 }
 
-.contactame i{
+.contact-me i{
     color:rgb(172, 112, 136);
     font-size: 20px;
    
 }
 
-.contactame p{
-    margin: 15px 0;
+.p-contact-me{
     font-size: 18px;
+    margin-bottom: 40px;
+}
+.cont-link-contact{
+    margin-left: 20px;
 }
 
 .link-contacto{
     display: block;
     margin: 15px 0;
     font-size: 18px;
-
-
-
 }
 
 .link-contacto a{
@@ -319,39 +318,42 @@ margin-right: 100px;
     color:  rgb(172, 112, 136);
 }
 
-.escribime{
+.write-me{
     width: 60%;
 }
 
-.escribime h2{
-    margin-bottom: 15px;
+.cont-name-surname{
+    display: flex; 
 }
 
-.cont-nombre{
+.cont-name{
     display: flex;
     flex-direction: column;
     width: 50%;
     margin-right: 20px;
 }
 
-.cont-apellido{
+.cont-surname{
     display: flex;
     flex-direction: column;
     width: 50%;
 
 }
 
-.nombreYapellido{
-    display: flex;
-}
 
-.cont-emailymensaje{
+.cont-email-message{
     display: flex;
     flex-direction: column;
 }
- label{
-   margin: 15px 0;
+ 
+label{
+   margin-bottom: 20px;
 }
+
+.email, .message{
+    margin-top: 20px;
+}
+
 input, textarea{
     border-radius: 30px;
     padding: 10px 25px;
@@ -360,18 +362,27 @@ input, textarea{
 
 }
 
-/* FOOTER */
+/*####---- FOOTER ----####*/
 
 footer{
     background-color:rgb(81, 50, 82);
     padding: 100px 0;
 }
 
-footer nav ul, footer ul, .copy{
+.nav-footer ul, .cont-contacto, .copyright{
     display: flex;
     justify-content: center;
-    color:rgb(249, 218, 194);
 
+}
+
+.nav-footer ul li a{
+    text-decoration: none;
+    color: white;
+    margin: 10px;
+}
+
+.nav-footer{
+  height: 20px;
 }
 
 .cont-contacto li a{
@@ -389,12 +400,6 @@ footer nav ul, footer ul, .copy{
 
 
 }
-footer nav ul li a{
-
- text-decoration: none;
-    margin: 10px;
-    color: white;
-}
 
 li{
     list-style: none;
@@ -404,13 +409,19 @@ li{
     background-color:rgb(249, 218, 194);
 }
 
+.copyright{
+    color: rgb(249, 218, 194);
+}
+
 /* Diseño Responsive*/
 
 /*Tablets*/
 
 @media (max-width:960px){
-
-    header, nav{
+    
+    
+    
+    .nav-footer{
       display: none;
     }
 
@@ -420,13 +431,13 @@ li{
         
     }
 
-    .saludo{
+    .intro{
         width: 100wh;
         text-align: center;
         margin: 20px auto;
     }
 
-    .mifoto{
+    .foto-perfil{
         margin: 20px 0;
     }
 
@@ -437,50 +448,82 @@ li{
         padding: 30px 20px;
     }
 
-    .contactame, .escribime{
+    .contact-me, .write-me{
         text-align: center;
         margin: 20px auto;
         width: 100%;
         padding: 20px;
     }
 
-    .nombreYapellido{
+    .cont-name-surname{
         flex-direction: column;
         justify-content: center;
         align-items: center;
         
     }
 
-    .cont-nombre, .cont-apellido{
+    .cont-name, .cont-surname{
         width: 100%;
         margin: 0;
     }
 
+    .surname{
+        margin-top: 20px;
+    } 
+
     }
+
+
 
 /*Mobile*/
 
 @media (max-width:480px){
+    
+    header{
+        height: 60px;
+        align-items: center;
+        justify-content: center;
+        font-size: 12px;
+    }
+
+    .nav-header ul{
+        margin: 0;
+    }
+
+    .nav-header ul li{
+        margin: 0px;
+    }
+
+    .nav-header a:hover{
+        font-size: 12px;
+    }
+
+    .contacto{
+        background-color:rgb(122, 64, 105);
+        padding: 5px 10px;
+        border-radius: 50px;
+    }
+
 
     .perfil{
         display: flex;
         justify-content: center;
     }
 
-    .mifoto{
+    .foto-perfil{
         width: 200px;
         height: 200px; 
     }
 
     h1{
-        font-size: 55px;
+        font-size: 40px;
     }
 
     h3{
         font-size: 20px;
     }
 
-    .misConocimientos{
+    .mis-conocimientos{
         padding: 0;
     }
 
@@ -514,7 +557,11 @@ li{
         padding: 30px 0;
     }
 
-    .footer nav ul, footer ul, .copy{
+    .cont-contacto li a{
+        margin: 15px;
+    }
+
+    .footer nav ul, footer ul, .copyright{
         flex-direction: column;
         align-items: center; 
     }

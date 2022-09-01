@@ -1,27 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
+    <meta name="author" content="Silvana Lima">
+    <link rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
       integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
       crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-
+      referrerpolicy="no-referrer"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="./style.css" />
-    <title>Portafolio Ada</title>
+    <title>Portafolio Silvana Lima</title>
   </head>
   <body>
+
+    <!--#### HEADER ####-->
+
     <header>
-      <nav>
+      <nav class="nav-header">
         <ul>
           <li><a href="#hola">HOLA</a></li>
           <li><a href="#conocimientos">CONOCIMIENTOS</a></li>
@@ -31,39 +31,48 @@
       </nav>
     </header>
     
+    <!--#### MAIN ####-->
+
     <main>
 
+      <!--#### SECCIÓN MI PRESENTACIÓN ####-->
+
       <section class="cont-presentacion" id="hola">
-        <div class="saludo">
+        <div class="intro">
           <h3>¡Hola! Soy</h3>
           <h1>Silvana Lima</h1>
           <p>Desarrolladora Web Frontend</p>
           <button><a href="#proyectos"> LO QUE HAGO</a></button>
         </div>
+
         <figure class="perfil">
-          <img src="./assets/fotoperfil.jpg" alt="Mi foto de perfil" class="mifoto">
+          <img src="./assets/fotoperfil.jpg" alt="Mi foto de perfil" class="foto-perfil">
         </figure>
       </section>
 
-      <section class="misConocimientos" id="conocimientos">
+      <!--#### SECCIÓN MIS CONOCIMIENTOS ####-->
+
+      <section class="mis-conocimientos" id="conocimientos">
         <div class="cont-conocimientos">
-        <div class="conocimientos">
-          <h2>Mis conocimientos</h2>
-          <p class="parrafo-intro">
-            Lorem ipsum dolor sit amet consectetur  <br> adipisicing elit. Nulla sint
-            deserunt nesciunt perspiciatis <br> fuga odit facilis mollitia.
-          </p>
+          <div class="conocimientos">
+            <h2>Mis conocimientos</h2>
+            <p class="p-intro-conocimientos">
+              Lorem ipsum dolor sit amet consectetur  <br> adipisicing elit. Nulla sint
+              deserunt nesciunt perspiciatis <br> fuga odit facilis mollitia.
+            </p>
+          </div>
+          <div class="cont-skills">
+            <div class="box-skill"><i class="fa-brands fa-html5"></i><p>HTML 5</p></div>
+            <div class="box-skill"><i class="fa-brands fa-css3"></i><p>CSS 3</p></div>
+            <div class="box-skill"><i class="fa-brands fa-sass"></i><p>Sass</p></div>
+            <div class="box-skill"><i class="fa-brands fa-js"></i><p>JavaScript</p></div>
+            <div class="box-skill"><i class="fa-brands fa-react"></i><p>React</p></div>
+            <div class="box-skill"><i class="fa-brands fa-git-alt"></i><p>GIT</p></div>
+          </div>
         </div>
-        <div class="iconos-skills">
-          <div class="skill"><i class="fa-brands fa-html5"></i><p>HTML 5</p></div>
-          <div class="skill"><i class="fa-brands fa-css3"></i><p>CSS 3</p></div>
-          <div class="skill"><i class="fa-brands fa-sass"></i><p>Sass</p></div>
-          <div class="skill"><i class="fa-brands fa-js"></i><p>JavaScript</p></div>
-          <div class="skill"><i class="fa-brands fa-react"></i><p>React</p></div>
-          <div class="skill"><i class="fa-brands fa-git-alt"></i><p>GIT</p></div>
-        </div>
-      </div>
       </section>
+
+      <!--#### SECCIÓN CITA ####-->
 
       <section class="cont-cita">
         <i class="fa-solid fa-quote-right"></i>
@@ -73,20 +82,24 @@
         <em>Albert Einstein</em>
       </section>
 
+      <!--#### SECCIÓN MIS PROYECTOS ####-->
+
       <section class="projects" id="proyectos">
         <h2>Mis proyectos</h2>
-        <p class="parrafo-intro">
+        <p class="p-intro-projects">
           Lorem ipsum dolor sit amet consectetur <br> adipisicing elit. Amet
           voluptatum <br> rerum soluta porro labore vero.
         </p>
+       
         <div class="container-projects">
+
           <div class="box-project">
-            <a href="">
+            <a href="https://silvana-lima.github.io/portafolio-silvana/" target="_blank">
               <figure>
                 <img src="./assets/portafolio.png" alt="" />
               </figure>
-              <p>Portafolio</p></a
-            >
+              <p>Portafolio</p>
+            </a>
           </div>
 
           <div class="box-project">
@@ -94,116 +107,129 @@
               <figure>
                 <img src="./assets/generadordememes.png" alt="" />
               </figure>
-
-              <p>Generador de memes</p></a
-            >
+              <p>Generador de memes</p>
+            </a>
           </div>
+          
           <div class="box-project">
             <a href="">
               <figure>
                 <img src="./assets/match3.png" alt="" />
               </figure>
-              <p>Match 3</p></a
-            >
+              <p>Match 3</p>
+            </a>
           </div>
+
           <div class="box-project">
             <a href="">
               <figure>
                 <img src="./assets/controladordegastos.png" alt="" />
               </figure>
-              <p>Controlador de gastos</p></a
-            >
+              <p>Controlador de gastos</p>
+            </a>
           </div>
+
           <div class="box-project">
             <a href="">
               <figure>
                 <img src="./assets/administradordereuniones.png" alt="" />
               </figure>
-              <p>Administrador de reuniones</p></a
-            >
+              <p>Administrador de reuniones</p>
+            </a>
           </div>
+
           <div class="box-project">
             <a href="">
               <figure>
                 <img src="./assets/buscadordepeliculas.png" alt="" />
               </figure>
-              <p>Buscador de películas</p></a
-            >
+              <p>Buscador de películas</p>
+            </a>
           </div>
+
           <div class="box-project">
             <a href="">
               <figure>
                 <img src="./assets/todoapp.png" alt="" />
               </figure>
-              <p>Todo app</p></a
-            >
+              <p>Todo app</p>
+            </a>
           </div>
+
         </div>
       </section>
 
+      <!--#### SECCIÓN CONTACTO ####-->
+
       <section class="section-contac" id="contacto">
+
         <div class="container-contac">
-        <div class="contactame">
-          <h2>Contactame</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi aut
-            veritatis tempore perspiciatis, earum consequatur error,
-            necessitatibus, odit exercitationem possimus harum vitae facilis!
-            Voluptas laborum, facilis iusto suscipit sequi harum?
-          </p>
-          <ul>
-            <li class="link-contacto"><a href=""><i class="fa-brands fa-github-alt"></i> Silvana-Lima</a></li>
-            <li class="link-contacto"><a href=""><i class="fa-brands fa-linkedin-in"></i> Silvana Lima</a></li>
-            <li class="link-contacto"><a href=""><i class="fa-solid fa-envelope"></i> silvanalima.89@hotmail.com</a></li>
-          </ul> 
-          
-          
-        </div>
-        <div class="escribime">
-          <h2>Escribime</h2>
 
-          <form>
-            <div class="nombreYapellido">
-              <div class="cont-nombre">
-                <label for="nombre" class="nombre">Nombre*</label>
-                <input type="text" id="nombre" required placeholder="p. ej.: Silvana"/>
+          <div class="contact-me">
+            <h2>Contactame</h2>
+            <p class="p-contact-me">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi aut
+              veritatis tempore perspiciatis, earum consequatur error,
+              necessitatibus, odit exercitationem possimus harum vitae facilis!
+              Voluptas laborum, facilis iusto suscipit sequi harum?
+            </p>
+            <ul class="cont-link-contact">
+              <li class="link-contacto"><a href="https://github.com/Silvana-Lima" target="_blank"><i class="fa-brands fa-github-alt"></i> Silvana-Lima</a></li>
+              <li class="link-contacto"><a href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin-in"></i> Silvana Lima</a></li>
+              <li class="link-contacto"><a href=""><i class="fa-solid fa-envelope"></i> silvanalima.89@hotmail.com</a></li>
+            </ul> 
+          </div>
+
+          <div class="write-me">
+            <h2>Escribime</h2>
+            <form>
+              <div class="cont-name-surname">
+
+                <div class="cont-name">
+                  <label for="name" class="name">Nombre*</label>
+                  <input type="text" id="name" name="name" required placeholder="p. ej.: Silvana"/>
+                </div>
+                <div class="cont-surname">
+                  <label for="surname" class="surname">Apellido*</label>
+                  <input type="text" id="surname" name="surname" required placeholder="p. ej.: Lima"/>
+                </div>
+
               </div>
 
-              <div class="cont-apellido">
-                <label for="apellido" class="apellido">Apellido*</label>
-                <input type="text" id="apellido"  required placeholder="p. ej.: Lima"/>
-              </div>
-            </div>
-            <div class="cont-emailymensaje">
-              <label for="email">Email*</label>
-              <input type="email" id="email" required placeholder="p. ej.: email@dominio.com"/>
+              <div class="cont-email-message">
 
-              <label for="mensaje">Mensaje*</label>
-              <textarea id="mensaje" cols="40" rows="10"required placeholder="Escriba un mensaje aquí"></textarea>
-            </div>
-            <input type="submit" value="Enviar" class="enviar" />
-          </form>
-        </div>
+                <label for="email" class="email">Email*</label>
+                <input type="email" id="email" name="email" required placeholder="p. ej.: email@dominio.com"/>
+
+                <label for="message" class="message">Mensaje*</label>
+                <textarea id="message" cols="40" rows="10"required placeholder="Escriba un mensaje aquí"></textarea>
+              </div>
+              <input type="submit" value="Enviar" class="enviar" />
+            </form>
+          </div>
       </div>
       </section>
     </main>
 
+    <!--#### FOOTER ####-->
+
     <footer>
-      <nav>
+      <nav class="nav-footer">
         <ul>
-          <li><a href="#hola" class="nav-footer">HOLA</a></li>
-          <li><a href="#conocimientos" class="nav-footer">CONOCIMIENTOS</a></li>
-          <li><a href="#proyectos" class="nav-footer">PROYECTOS</a></li>
-          <li><a href="#contacto" class="nav-footer">CONTACTO</a></li>
+          <li><a href="#hola">HOLA</a></li>
+          <li><a href="#conocimientos">CONOCIMIENTOS</a></li>
+          <li><a href="#proyectos">PROYECTOS</a></li>
+          <li><a href="#contacto">CONTACTO</a></li>
         </ul>
       </nav>
+
       <ul class="cont-contacto">
-        <li><a href="" class="link-contacto"><i class="fa-brands fa-github-alt"></i></a></li>
-        <li><a href="" class="link-contacto"><i class="fa-brands fa-linkedin-in"></i></a></li>
+        <li><a href="https://github.com/Silvana-Lima" class="link-contacto" target="_blank"><i class="fa-brands fa-github-alt"></i></a></li>
+        <li><a href="https://www.linkedin.com/" class="link-contacto" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
         <li><a href="" class="link-contacto"><i class="fa-solid fa-envelope"></i></a></li>
       </ul>
 
-      <p class="copy">Hecho con ❤️ por Silvana</p>
+      <p class="copyright">Hecho con ❤️ por Silvana</p>
     </footer>
   </body>
 </html>
