@@ -2,24 +2,33 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body{
     font-family: 'Roboto Condensed', sans-serif;
 }
 
+:root{
+--darkColor1:rgb(81, 50, 82);
+--darkColor2:rgb(122, 64, 105);
+--darkColor3: rgb(172, 112, 136);
+--lightColor1:rgb(246, 231, 216);
+--lightColor2:rgb(249, 218, 194);
+}
 
 /*####---- HEADER ----####*/
 
 
 header{
-    background-color:rgb(81, 50, 82);
+    background-color:var(--darkColor1);
     position: sticky;
     top: 0;
     height: 70px;
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    z-index: 1;
 
 }
 
@@ -31,20 +40,28 @@ header{
 }
 
 .nav-header ul li a{
+    padding: 10px;
     text-decoration: none;
     margin: 10px;
-    color: white;
+    color: var(--lightColor1);
 }
 
-.nav-header a:hover, .nav-footer a:hover{
-    font-size: 18px;
-    color: rgb(172, 112, 136);
+ .nav-header a:hover, .nav-footer a:hover{
+    color: var(--lightColor2);
+ } 
+
+ .nav-header li:hover, .nav-footer li:hover, .cont-contacto li:hover{
+    transform: scale(1.2);
+    transition: 1s; 
+  
 }
 
 .contacto{
-    background-color:rgb(122, 64, 105);
+    background-color:var(--darkColor2);
     padding: 10px 20px;
     border-radius: 50px;
+    
+    
 }
 
 
@@ -56,7 +73,7 @@ header{
 
 .cont-presentacion{
     min-height: 100vh;
-    background: rgb(249, 218, 194);
+    background: linear-gradient(var(--lightColor2) 10%, var(--darkColor3) 90%);
     display: flex;
     justify-content:center;
     align-items: center;
@@ -73,25 +90,25 @@ header{
 
 h1{ 
     font-size: 55px;
-    color: rgb(122, 64, 105);
+    color:var(--darkColor1);
 }
 
 h3{
     font-size: 25px;
-    color: gray;
+    color: var(--darkColor2);
 }
 
 button, .enviar{
-    background-color: rgb(122, 64, 105);
+    background-color:var(--darkColor2);
    border-radius: 50px;
    padding: 15px 20px;
    margin-top: 20px;
    border-style: none;
-   color: white;
+   color:var(--lightColor1);
 }
 
 button:hover, .enviar:hover{
-    background-color: rgb(81, 50, 82);
+    background-color: var(--darkColor1);
 }
 
 
@@ -99,15 +116,15 @@ button:hover, .enviar:hover{
     width: 270px;
     height: 270px;
     border-radius: 50%;
-    border: 2px solid rgb(122, 64, 105);
-    box-shadow: 8px 10px 14px 0px rgba(122,64,105,0.45);
+    border: 4px solid var(--darkColor2);
+    box-shadow: 8px 10px 14px 0px var(--darkColor1, 0.45);
 
 
 }
 
 button a{
     text-decoration: none;
-    color:white;
+    color:var(--lightColor1);
 }
 
 /*####---- SECCIÓN CONOCIMIENTOS ----####*/
@@ -149,7 +166,7 @@ justify-content: center;
 
 .box-skill{
 
-    border: 1px solid  rgb(122, 64, 105);
+    border: 1px solid  var(--darkColor1);
     border-radius: 5px;
     width: 200px;
     height: 200px;
@@ -167,7 +184,9 @@ justify-content: center;
 }
 
 .box-skill:hover{
-    background-color: rgb(248, 230, 217);
+    border-color:var(--darkColor3);
+    transform: rotate(-5deg);
+    transition: 1s all;
 }
 
  .fa-html5{
@@ -195,19 +214,20 @@ color: rgb(255, 72, 0);
 
 .cont-cita{
     text-align: center;
-    background-color:rgb(172, 112, 136);
+    background-color:var(--darkColor3);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
     font-size: 20px;
-    color: white;
+    color: var(--lightColor1);
     
 }
 
 .cont-cita i{
     font-size: 80px;
+    color: var(--lightColor1);
 }
 
 .cont-cita *{
@@ -238,7 +258,7 @@ color: rgb(255, 72, 0);
 
 
 .box-project{
-    border: 1px solid  rgb(122, 64, 105);
+    border: 1px solid var(--darkColor1);
     border-radius: 5px;
     margin: 15px;
     padding: 15px;
@@ -259,7 +279,7 @@ color: rgb(255, 72, 0);
 }
 
 .box-project:hover{
-    box-shadow: 8px 10px 14px 0px rgba(122,64,105,0.45);
+    box-shadow: 8px 10px 14px 0px var(--darkColor1, 0.45);
 
 }
 
@@ -274,9 +294,9 @@ color: rgb(255, 72, 0);
 
 .container-contac{
     display: flex;
-    background-color:rgb(249, 218, 194);
+    background-color: var(--lightColor2);
     justify-content: center;
-    border: 1px solid lightgray;
+    border: 1px solid var(--darkColor3);
     border-radius: 10px;
     margin: 50px auto;
     padding: 90px 50px;
@@ -288,9 +308,25 @@ width: 40%;
 margin-right: 100px;
 }
 
+.link-contacto{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+
 .contact-me i{
-    color:rgb(172, 112, 136);
-    font-size: 20px;
+    font-size: 18px;
+    text-decoration: none;
+    color:var(--lightColor1);
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    background-color:var(--darkColor3);
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
    
 }
 
@@ -302,11 +338,6 @@ margin-right: 100px;
     margin-left: 20px;
 }
 
-.link-contacto{
-    display: block;
-    margin: 15px 0;
-    font-size: 18px;
-}
 
 .link-contacto a{
     text-decoration: none;
@@ -315,7 +346,8 @@ margin-right: 100px;
 }
 
 .link-contacto a:hover{
-    color:  rgb(172, 112, 136);
+    color:  var(--darkColor3);
+  
 }
 
 .write-me{
@@ -365,7 +397,7 @@ input, textarea{
 /*####---- FOOTER ----####*/
 
 footer{
-    background-color:rgb(81, 50, 82);
+    background-color:var(--darkColor1);
     padding: 100px 0;
 }
 
@@ -377,7 +409,7 @@ footer{
 
 .nav-footer ul li a{
     text-decoration: none;
-    color: white;
+    color: var(--lightColor1);
     margin: 10px;
 }
 
@@ -388,11 +420,11 @@ footer{
 .cont-contacto li a{
     margin:30px 10px;
     text-decoration: none;
-    color: white;
+    color:var(--lightColor1);
     width: 50px;
     height: 50px;
     padding: 10px;
-    background-color:rgb(172, 112, 136);
+    background-color:var(--darkColor3);
     border-radius: 50px;
     display: flex;
     justify-content: center;
@@ -406,16 +438,16 @@ li{
 }
 
 .cont-contacto a:hover{
-    background-color:rgb(249, 218, 194);
+    background-color:var(--darkColor2);
 }
 
 .copyright{
-    color: rgb(249, 218, 194);
+    color:var(--lightColor2);
 }
 
-/* Diseño Responsive*/
+/*####---- DISEÑO RESPONSIVE ----####*/
 
-/*Tablets*/
+/*####---- TABLETS ----####*/
 
 @media (max-width:960px){
     
@@ -475,7 +507,7 @@ li{
 
 
 
-/*Mobile*/
+/*####----MOBILE---****/
 
 @media (max-width:480px){
     
@@ -499,7 +531,7 @@ li{
     }
 
     .contacto{
-        background-color:rgb(122, 64, 105);
+        background-color:var(--darkColor3);
         padding: 5px 10px;
         border-radius: 50px;
     }
@@ -539,8 +571,8 @@ li{
 
 
     .section-contac{
-         padding:100px 0 0 0;
-         
+        padding:100px 0 0 0;
+        
     }
     .container-contac{
         padding: 20px 10px;
