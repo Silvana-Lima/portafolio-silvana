@@ -4,16 +4,28 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portafolio personal de Silvana Lima">
     <meta name="author" content="Silvana Lima">
+
+    <!-- Font Awesome -->
     <link rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
       integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"/>
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
     <link rel="shortwt icon" href="assets/LogoSL.png" type="image/x-icon">
+    
+    <!-- Social Tags -->
+    <meta property="og:url" content="https://github.com/Silvana-Lima/portafolio-silvana" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Portafolio personal de Silvana Lima" />
+    <meta property="og:image" content="./assets/tagPortafolio.png"/>   
+
     <link rel="stylesheet" href="./style.css" />
     <title>Portafolio Silvana Lima</title>
   </head>
@@ -40,10 +52,10 @@
 
       <section class="cont-presentacion" id="hola">
         <div class="intro">
-          <h3>¡Hola! Soy</h3>
+          <h3 tabindex="1">¡Hola! Soy</h3>
           <h1>Silvana Lima</h1>
           <p>Desarrolladora Web Frontend</p>
-          <button><a href="#proyectos"> LO QUE HAGO</a></button>
+          <a href="#proyectos" class="btn-proyectos"> LO QUE HAGO</a>
         </div>
 
         <figure class="perfil">
@@ -55,7 +67,7 @@
 
       <section class="cont-conocimientos" id="conocimientos">
           <div class="conocimientos">
-            <h2>Mis conocimientos</h2>
+            <h2  tabindex="2">Mis conocimientos</h2>
             <p class="p-intro-conocimientos">
               Lorem ipsum dolor sit amet consectetur  <br> adipisicing elit. Nulla sint
               deserunt nesciunt perspiciatis <br> fuga odit facilis mollitia.
@@ -73,7 +85,7 @@
 
       <!--#### SECCIÓN CITA ####-->
 
-      <section class="cont-cita">
+      <section class="cont-cita" tabindex="3">
         <i class="fa-solid fa-quote-right"></i>
         <blockquote>
           Hay una fuerza motriz más poderosa que el vapor, la electricidad y la energía atómica: <br> LA VOLUNTAD.
@@ -84,7 +96,7 @@
       <!--#### SECCIÓN MIS PROYECTOS ####-->
 
       <section class="container-projects" id="proyectos">
-        <h2>Mis proyectos</h2>
+        <h2 tabindex="4">Mis proyectos</h2>
         <p class="p-intro-projects">
           Lorem ipsum dolor sit amet consectetur <br> adipisicing elit. Amet
           voluptatum <br> rerum soluta porro labore vero.
@@ -95,7 +107,7 @@
           <div class="box-project">
             <a href="https://silvana-lima.github.io/portafolio-silvana/" target="_blank">
               <figure>
-                <img src="./assets/portafolio.png" alt="" />
+                <img src="./assets/portafolio.png" alt="Imagen de mi proyecto Portafolio" />
               </figure>
               <p>Portafolio</p>
             </a>
@@ -104,7 +116,7 @@
           <div class="box-project">
             <a href="">
               <figure>
-                <img src="./assets/generadordememes.png" alt="" />
+                <img src="./assets/generadordememes.png" alt="Imagen de mi proyecto Generador de memes" />
               </figure>
               <p>Generador de memes</p>
             </a>
@@ -113,7 +125,7 @@
           <div class="box-project">
             <a href="">
               <figure>
-                <img src="./assets/match3.png" alt="" />
+                <img src="./assets/match3.png" alt="Imagen de mi proyecto Match 3" />
               </figure>
               <p>Match 3</p>
             </a>
@@ -122,7 +134,7 @@
           <div class="box-project">
             <a href="">
               <figure>
-                <img src="./assets/controladordegastos.png" alt="" />
+                <img src="./assets/controladordegastos.png" alt="Imagen de mi proyecto Controlador de gastos" />
               </figure>
               <p>Controlador de gastos</p>
             </a>
@@ -131,7 +143,7 @@
           <div class="box-project">
             <a href="">
               <figure>
-                <img src="./assets/administradordereuniones.png" alt="" />
+                <img src="./assets/administradordereuniones.png" alt="Imagen de mi proyecto Administrador de reuniones" />
               </figure>
               <p>Administrador de reuniones</p>
             </a>
@@ -140,7 +152,7 @@
           <div class="box-project">
             <a href="">
               <figure>
-                <img src="./assets/buscadordepeliculas.png" alt="" />
+                <img src="./assets/buscadordepeliculas.png" alt="Imagen de mi proyecto Buscador de películas" />
               </figure>
               <p>Buscador de películas</p>
             </a>
@@ -149,7 +161,7 @@
           <div class="box-project">
             <a href="">
               <figure>
-                <img src="./assets/todoapp.png" alt="" />
+                <img src="./assets/todoapp.png" alt="Imagen de mi proyecto Todo app" />
               </figure>
               <p>Todo app</p>
             </a>
@@ -165,7 +177,7 @@
         <div class="container-contac">
 
           <div class="contact-me">
-            <h2>Contactame</h2>
+            <h2  tabindex="5">Contactame</h2>
             <p class="p-contact-me">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi aut
               veritatis tempore perspiciatis, earum consequatur error,
@@ -180,7 +192,7 @@
           </div>
 
           <div class="write-me">
-            <h2>Escribime</h2>
+            <h2 tabindex="5">Escribime</h2>
             <form>
               <div class="cont-name-surname">
 
