@@ -16,6 +16,4 @@ Este proyecto cuenta con un diseño responsivo. Con los siguientes puntos de qui
 
 ## Link
 
-- [Enlace directo a mi portafolio!!😊] (https://silvana-lima.github.io/portafolio-silvana/)
-
-(https://raw.githubusercontent.com/Silvana-Lima/portafolio-silvana/master/assets/tagPortafolio.jpg)
+- [Enlace directo a mi portafolio!!](https://silvana-lima.github.io/portafolio-silvana/)😊
