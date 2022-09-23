@@ -8,11 +8,13 @@ Aquí podrán ver mis conocimientos adquiridos hasta el momento, así como tambi
 
 ## Detalles importantes
 
-Este proyecto cuenta con un diseño responsivo. Con los siguientes puntos de quiebre:
+Este proyecto cuenta con un `diseño responsivo`. Con los siguientes puntos de quiebre:
 
 - Tablets: Max-width:960px
 
 - Mobil: Max-width:480px
+
+También cuenta con propiedades para mejorar la `accesibilidad`, como los atributos area, tabindex, alt, etc. Además de poseer contraste de colores.
 
 ## Link
 
